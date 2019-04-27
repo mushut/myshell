@@ -1,0 +1,12 @@
+myshell program
+--
+myshell.cpp
+	main program lies here
+
+path
+	at the beginning current path should be checked
+		should be needed only once (at start)
+parse
+	parse the text written in the shell
+	string as a parameter
+	returns command and it's parameter
