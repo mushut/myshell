@@ -1,5 +1,10 @@
 myshell program
 --
+TODO:
+-makefile for testing
+-check current path from the filesystem
+	*notice: how moving in the directory is implemented?
+
 myshell.cpp
 	main program lies here
 
@@ -10,3 +15,4 @@ parse
 	parse the text written in the shell
 	string as a parameter
 	returns command and it's parameter
+

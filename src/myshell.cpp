@@ -13,9 +13,14 @@ int main(int argc, char **argv) {
 	std::cout << "myshell" << std::endl;
 
 	// program run with arguments
+	if (argc > 1) {
+		// Do something
+	}
 	
 	// program run without arguments
-	// current path
+	else {
+		// Do something else
+	}
 
 	return 0;
 }
