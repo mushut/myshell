@@ -2,17 +2,15 @@ myshell program
 --
 TODO:
 -makefile for testing
--check current path from the filesystem
-	*notice: how moving in the directory is implemented?
 
 myshell.cpp
 	main program lies here
 
 path
-	at the beginning current path should be checked
-		should be needed only once (at start)
+	at the beginning current path is home directory
 parse
 	parse the text written in the shell
 	string as a parameter
 	returns command and it's parameter
-
+list command
+	lists what is in current directory

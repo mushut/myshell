@@ -19,7 +19,21 @@ int main(int argc, char **argv) {
 	
 	// program run without arguments
 	else {
-		// Do something else
+		std::string path = "~";
+		std::string command = "";
+
+		while (true) {
+			std::cout << "myshell " + path + ": ";
+			
+			// How to read all variables of the command?
+			std::cin >> command;
+
+			// parse command and execute the command
+
+			if (command == "quit") {
+				break;
+			}
+		}
 	}
 
 	return 0;
