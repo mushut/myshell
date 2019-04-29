@@ -7,6 +7,8 @@ TODO:
 
 myshell.cpp
 	main program lies here
+command.h
+command.cpp
 
 path
 	at the beginning current path is home directory
@@ -14,5 +16,7 @@ parse
 	parse the text written in the shell
 	string as a parameter
 	returns command and it's parameter
+	command class
+		object is generated during parsing
 list command
 	lists what is in current directory
