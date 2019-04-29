@@ -25,8 +25,7 @@ int main(int argc, char **argv) {
 		while (true) {
 			std::cout << "myshell " + path + ": ";
 			
-			// How to read all variables of the command?
-			std::cin >> command;
+			getline(std::cin, command);
 
 			// parse command and execute the command
 

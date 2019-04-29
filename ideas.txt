@@ -1,7 +1,9 @@
 myshell program
 --
 TODO:
--makefile for testing
+-first commands that do something
+	*ls
+	*cd
 
 myshell.cpp
 	main program lies here
