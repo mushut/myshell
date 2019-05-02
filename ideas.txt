@@ -8,7 +8,11 @@ TODO:
 myshell.cpp
 	main program lies here
 command.h
+	Command class, that connects command to different actions
 command.cpp
+path.h
+	Path structure as a class
+path.cpp
 
 path
 	at the beginning current path is home directory
