@@ -23,10 +23,10 @@ int main(int argc, char **argv) {
 	else {
 		std::string path = "~";
 		std::string command_text = "";
-		std::vector<Command> command_history;
+		std::vector<Command *> command_history;
 
 		while (true) {
-			Command command;
+			Command *command;
 			std::vector<std::string> parameters;
 
 			std::cout << "myshell " + path + ": ";
@@ -43,7 +43,7 @@ int main(int argc, char **argv) {
 				break;
 			}
 
-			command.execute();
+			command->execute();
 			command_history.push_back(command);
 			// Todo: write command to a log file
 		}

@@ -9,7 +9,7 @@ extern "C" {
 
 Command::Command(void) {
 	type = "Not initialized";
-	parameters = NULL;
+	parameters = std::vector<std::string>();
 }
 
 Command::Command(std::string new_type, std::vector<std::string> new_parameters) {
@@ -28,7 +28,7 @@ bool Command::execute(void) {
 		int result = 0;
 
 		result = stat("/home/asipovaa/", &buffer);
-		std::cout << buffer.uid_t << std::endl;
+		std::cout << buffer.st_uid << std::endl;
 		std::cout << "Result: " << result << std::endl;
 
 		return true;
