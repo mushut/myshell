@@ -43,9 +43,11 @@ int main(int argc, char **argv) {
 				break;
 			}
 
-			command->execute();
-			command_history.push_back(command);
-			// Todo: write command to a log file
+			if (command_text.length() > 0) {
+				command->execute();
+				command_history.push_back(command);
+				// Todo: write command to a log file
+			}
 		}
 	}
 
